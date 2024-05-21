@@ -2,24 +2,31 @@
 #include <windows.h>
 #include "C:\Users\kwinn\CLionProjects\lab_15\libs\data_structures\matrix\matrix.h"
 
+int getMax(int *a, int n) {
+    int max = a[0];
+    for (int i = 1; i < n; i++) {
+        if (a[i] > max) {
+            max = a[i];
+        }
+    }
+    return max;
+}
+
+void sortRowsByMinElement(matrix m) {
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
+}
+
 int main() {
     SetConsoleOutputCP(CP_UTF8);
     int quantity_rows, quantity_columns;
     printf("Введите количество рядов и столбцов: ");
     scanf("%d %d", &quantity_rows, &quantity_columns);
 
-    matrix square_matrix = getMemMatrix(quantity_rows, quantity_columns);
+    matrix m = getMemMatrix(quantity_rows, quantity_columns);
     printf("Введите элементы матрицы: ");
-    inputMatrix(square_matrix);
-    outputMatrix(square_matrix);
-    printf("\n");
-
-    position position_min_element = getMinValuePos(square_matrix);
-    position position_max_element = getMaxValuePos(square_matrix);
-
-    swapRows(square_matrix, position_min_element.rowIndex, position_max_element.rowIndex);
-
-    outputMatrix(square_matrix);
+    inputMatrix(m);
+    sortRowsByMinElement(m);
+    outputMatrix(m);
 
     return 0;
 }
