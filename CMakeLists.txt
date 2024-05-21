@@ -10,6 +10,8 @@ add_executable(lab_15 main.c
         libs/algorithms/algorithm.h
         libs/data_structures/matrix/matrix.c
         libs/data_structures/matrix/matrix.h
+        libs/data_structures/tests/test.c
+        libs/data_structures/tests/test.h
 )
 
 add_subdirectory(libs)

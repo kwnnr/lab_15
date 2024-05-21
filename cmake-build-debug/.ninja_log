@@ -1,11 +1,11 @@
 # ninja log v5
-0	246	7349049049346415	build.ninja	8a96734cb6c3ff60
+0	246	7380179554860411	build.ninja	8a96734cb6c3ff60
 26	258	7349049053037424	CMakeFiles/lab_15.dir/libs/algorithms/algorithm.c.obj	8e6346284869f8d8
+37	301	7349049053313511	CMakeFiles/lab_15.dir/libs/algorithms/array/array.c.obj	5e9f9a52da2e5cd3
+42	302	7349049053318574	libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj	38d34615722a3f30
 54	264	7349049053067455	libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj	1e867a46b4863b08
 32	282	7349049053253479	CMakeFiles/lab_15.dir/libs/data_structures/matrix/matrix.c.obj	a5450382c47ecb2
 2	283	7349049053263476	CMakeFiles/lab_15.dir/main.c.obj	3d8257ecf0badbfe
-37	301	7349049053313511	CMakeFiles/lab_15.dir/libs/algorithms/array/array.c.obj	5e9f9a52da2e5cd3
-42	302	7349049053318574	libs/algorithms/CMakeFiles/algorithms.dir/array/array.c.obj	38d34615722a3f30
 48	303	7349049053413820	libs/algorithms/CMakeFiles/algorithms.dir/algorithm.c.obj	7844e2161a89e510
 303	522	7349049055723377	libs/algorithms/libalgorithms.a	ad379389843c15e5
 522	621	7349049056714571	libs/data_structures/libdata_structures.a	da320c70c54b688d
